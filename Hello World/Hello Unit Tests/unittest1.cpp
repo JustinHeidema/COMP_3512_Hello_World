@@ -25,6 +25,13 @@ namespace HelloUnitTests
 			int result = gcd(a, b);
 			Assert::AreEqual(8, result);
 		}
+		TEST_METHOD(TestGcd3)
+		{
+			const int a = 53667;
+			const int b = 25527;
+			int result = gcd(a, b);
+			Assert::AreEqual(201, result);
+		}
 
 		TEST_METHOD(TestFibonacci1)
 		{
